@@ -1,0 +1,86 @@
+% ******************************************************************	********************************************
+%
+% **************************************************************************************************************
+\documentclass[ twoside,openright,titlepage,numbers=noenddot,%
+								toc=bibliography,toc=listof,%
+                footinclude=false,headinclude=false,cleardoublepage=empty,%
+								BCOR=5mm,paper=a4,fontsize=11pt,%DIV=14,%
+                ngerman%
+                ]{scrreprt}
+
+%***************************************************************************************************************
+% Note: Make all your adjustments in here
+%***************************************************************************************************************
+\input{htwsaar-i-mst-config}
+
+%********************************************************************
+% Hyphenation
+%*******************************************************
+%\hyphenation{put special hyphenation here}
+
+% ********************************************************************
+% GO!GO!GO! MOVE IT!
+%*******************************************************
+\begin{document}
+\frenchspacing
+\raggedbottom
+\selectlanguage{ngerman} % american ngerman
+\pagenumbering{roman}
+\pagestyle{plain}
+%*******************************************************
+% Frontmatter
+%*******************************************************
+\include{FrontBackmatter/Titlepage}
+\cleardoublepage\include{FrontBackmatter/Declaration}
+%\cleardoublepage\include{FrontBackmatter/ConfidentialityClause} % <-- sollte in der Regel nicht notwendig sein und mit Betreuer/Unternehmen abgeklärt werden
+%\cleardoublepage\include{FrontBackmatter/Abstract} % <-- Auskommentiert
+\cleardoublepage\include{FrontBackmatter/Acknowledgments}
+\cleardoublepage\include{FrontBackmatter/Contents}
+
+%*******************************************************
+% Mainmatter
+%*******************************************************
+\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{headings}
+%\pagestyle{scrheadings}
+%\cleardoublepage\include{Examples/Einleitung}	 	% Diese Einbindungen werden natürlich entfernt, wenn es an die richtige
+% <<< Hier alle Chapter der Abschlussarbeit (einzeln) einbinden
+
+%Einleitung
+\cleardoublepage\include{Chapters/1-Einleitung/Einleitung}
+
+%Lehmanns Gesetze
+\cleardoublepage\include{Chapters/2-Lehmanns-Gesetze/Lehmanns-Gesetze}
+
+%Die Software-Entwicklung
+\cleardoublepage\include{Chapters/3-Die-Software-Entwicklung/Die-Software-Entwicklung}
+
+%Refactoring
+\cleardoublepage\include{Chapters/4-Refactoring/refactoring}
+
+%Vorgehensmodell Cloud Native
+\cleardoublepage\include{Chapters/Vorgehensmodell/Vorgehensmodell}
+
+%********************************************************************
+% Bibliography/References
+%*******************************************************
+\cleardoublepage\include{FrontBackmatter/Bibliography}
+
+%********************************************************************
+% List of Figures etc.
+%*******************************************************
+\cleardoublepage\include{FrontBackmatter/ListOfs}
+\include{FrontBackmatter/Abbreviations}
+
+% ********************************************************************
+% Appendix/Anhang
+%***************************************************************
+%\appendix
+%\part*{Anhang}
+%\cleardoublepage\include{Chapters/Anhang-A}
+
+%*******************************************************
+\cleardoublepage\include{FrontBackmatter/Colophon}
+\end{document}
+% ********************************************************************
