@@ -10,6 +10,7 @@ Ausarbeitung für das Pflichtmodul Software-Entwicklungsprozesse an der Hochschu
 
 #### Saarbrücken, 27. Juli 2021
 
+[PDF-Version](https://github.com/hey-nicolasklein/htw_software-modernisierung/blob/5378038f995d0343455ab5bb372de113f764f520/sep_software-modernisierung_ausarbeitung.pdf)
 
 ## Inhaltsverzeichnis
 
